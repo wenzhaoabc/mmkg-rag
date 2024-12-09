@@ -8,7 +8,7 @@ Multimodal RAG system for multimodal LLMs.
 
 [System Demo Video](./assets/mmkg-rag-recording.mp4)
 
-<video width="75%" controls src="./assets/mmkg-rag-recording.mp4"></video>
+[![Demo Video](https://img.youtube.com/vi/9NdHGnSZpXE/0.jpg)](https://www.youtube.com/watch?v=9NdHGnSZpXE)
 
 The details of the example can be found in [examples folder](./examples/rag/).
 
