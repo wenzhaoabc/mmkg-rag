@@ -1,5 +1,14 @@
 # Query and Answer Examples
 
+## Example labels
+
+**Entity**: 
+Title, Abstract, Introduction, Method, Result, Conclusion, Research Question, Hypothesis, Experiment, Dataset, Algorithm, Model, Author, Institution, Journal, Conference, Year, Keywords, Scientific Concept, Technology, Metric
+
+**Relation**:
+CONTAINS, PART_OF, PROPOSES, EVALUATES, PROVES, ACHIEVES, CITES, BUILDS_ON, COMPARES_WITH, AUTHORED_BY, AFFILIATED_WITH, PUBLISHED_IN, USES, IMPROVES, RELATES_TO
+
+
 ## Example 1: No retrieval
 
 ### Query
