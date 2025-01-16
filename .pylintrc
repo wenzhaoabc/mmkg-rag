@@ -1,0 +1,28 @@
+[MASTER]
+# A comma-separated list of package or module names from where C extensions may be loaded.
+extension-pkg-whitelist=
+
+[MESSAGES CONTROL]
+# Disable the message, report, category or checker with the given id(s).
+disable=
+    C0114,  # missing-module-docstring
+    C0115,  # missing-class-docstring
+    C0116,  # missing-function-docstring
+    W1203,  # logging-fstring-interpolation
+    
+
+[REPORTS]
+# Set the output format. Available formats are text, parseable, colorized, json, json:pretty, json:verbose, msvs (visual studio) and html
+output-format=text
+
+[FORMAT]
+# Maximum number of characters on a single line.
+max-line-length=120
+
+[DESIGN]
+# Maximum number of arguments for function / method.
+max-args=8
+
+[TYPECHECK]
+# List of decorators that produce context managers, such as contextlib.contextmanager. Add to this list to register other decorators that produce valid context managers.
+contextmanager-decorators=contextlib.contextmanager

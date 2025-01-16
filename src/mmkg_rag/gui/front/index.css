@@ -1,0 +1,22 @@
+.image-frame img {
+    max-width: 150px;
+}
+
+div.title+div.content span.md {
+    text-align: left !important;
+}
+
+#chatbot_id span.md {
+    text-align: left !important;
+}
+
+
+#chatbot_id button button.box {
+    text-align: left !important;
+}
+
+td div p {
+    white-space: normal;
+    max-width: 500px;
+    text-align: left !important;
+}

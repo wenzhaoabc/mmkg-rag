@@ -1,0 +1,21 @@
+[
+    {"name": "John", "age": 30, "city": "New York"},
+    {"name": "Alice", "age": 25, "city": "London"}
+]
+
+Some text before
+[
+    {"field1": "value1"},
+    {"field1": "value2"}
+]
+Some text after
+
+[
+    {"incomplete": "data"},
+    {"missing": "fields"},
+    {}
+]
+
+[invalid json]
+
+[]

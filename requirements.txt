@@ -1,0 +1,8 @@
+python-dotenv
+langchain-text-splitters
+openai
+networkx
+rapidfuzz
+neo4j
+gradio
+https://github.com/wenzhaoabc/gradio_m3d_chatbot/releases/download/v0.01/gradio_m3d_chatbot-0.0.2-py3-none-any.whl

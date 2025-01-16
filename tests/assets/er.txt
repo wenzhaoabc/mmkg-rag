@@ -1,0 +1,24 @@
+Entities:
+1. <TEMT, Method, "An optimization method for tuning configurations that balances job performance and resource utilization", ["TEM T effectively reduces the resource utilization ofFlink. Figure 3 illustrates the CPU utilization of thebest configurations found by different methods."]>
+2. <Baseline, Method, "A comparison method for evaluating TEMT's performance", ["We compare TEMT with other baselines across various workloads."]>
+3. <Workload, Concept, "The set of tasks or jobs to be processed", ["We compare TEMT with other baselines across various workloads."]>
+4. <CPU Utilization, Metric, "The measure of the CPU usage of a system", ["Figure 3 illustrates the CPU utilization of thebest configurations found by different methods."]>
+5. <Throughput, Metric, "The measure of the rate at which tasks are completed", ["Table 3 shows jobs’ minimum throughput after optimization by tuning methods."]>
+6. <SLA, Concept, "Service Level Agreement", ["Results show that TEMT outperforms all baselines, it effectively balances the relationship between job performance and resource utilization, by exploring configurations that minimize system resource usage while guaranteeing all jobs'SLA constraints."]>
+7. <Ablation Study, Experiment, "A study to determine the impact of removing components from a system", ["Table 4 presents the results of ablation experiments for our TEMT."]>
+8. <Dynamic Constraint Compression, Method, "A method for dynamically identifying and compressing constraints", ["Dynamic Constraint Compression dynamically identifies jobs with highly similar performance, reducing the number of constraints that need to be modeled by MTGP."]>
+9. <Importance-Aware Parameter Reduction, Method, "A method for reducing the number of configuration parameters to optimize", ["Importance-Aware Parameter Reduction has the ability to enhance the performance of Dynamic Constrained BO."]>
+10. <MTGP, Method, "A surrogate model used in Dynamic Constrained BO", ["Dynamic Constrained BO leads to a substantial performance improvement. In all test cases, TEMT-w/o-DCC performs worse than TEMT."]>
+
+Relationships:
+1. <TEMT, REDUCES, CPU Utilization, "TEMT reduces CPU utilization in a system", ["TEM T effectively reduces the resource utilization ofFlink."]>
+2. <TEMT, COMPARES_WITH, Baseline, "TEMT is compared with other baselines to evaluate its performance", ["We compare TEMT with other baselines across various workloads."]>
+3. <TEMT, OPTIMIZES, Workload, "TEMT optimizes the performance of a workload", ["TEMT reliably ensures the SLAs for multiple jobs."]>
+4. <TEMT, IMPROVES, Throughput, "TEMT improves the throughput of a workload", ["Compared to the default configuration parameters,TEMT improves the throughput of each job significantly."]>
+5. <TEMT, ENSURES, SLA, "TEMT ensures Service Level Agreements are met", ["TEMT reliably ensures the SLAs for multiple jobs."]>
+6. <TEMT, OUTPERFORMS, Baseline, "TEMT outperforms other baselines in performance", ["Results show that TEMT outperforms all baselines."]>
+7. <TEMT-w/o-DCC, PERFORMS_WORSE_THAN, TEMT, "TEMT without Dynamic Constraint Compression performs worse than TEMT", ["Compared to BO with fixed constraints, Dynamic Constrained BO leads to a substantial performance improvement."]>
+8. <Importance-Aware Parameter Reduction, ENHANCES, Dynamic Constrained BO, "Importance-Aware Parameter Reduction enhances the performance of Dynamic Constrained BO", ["Importance-Aware Parameter Reduction has the ability to enhance the performance of Dynamic Constrained BO."]>
+9. <Dynamic Constraint Compression, REDUCES, Number of Constraints, "Dynamic Constraint Compression reduces the number of constraints to model", ["Dynamic Constraint Compression dynamically identifies jobs with highly similar performance, reducing the number of constraints that need to be modeled by MTGP."]>
+10. <MTGP, USED_IN, Dynamic Constrained BO, "MTGP is used in Dynamic Constrained BO", ["Dynamic Constrained BO leads to a substantial performance improvement."]>
+ 1 entities and 1 relations
