@@ -1,0 +1,20 @@
+[project]
+name = "mmkg-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=5.25.2",
+    "gradio-m3d-chatbot",
+    "langchain-text-splitters>=0.3.8",
+    "neo4j>=5.28.1",
+    "networkx>=3.4.2",
+    "openai>=1.75.0",
+    "plotly>=6.0.1",
+    "python-dotenv>=1.1.0",
+    "rapidfuzz>=3.13.0",
+]
+
+[tool.uv.sources]
+gradio-m3d-chatbot = { url = "https://github.com/wenzhaoabc/gradio_m3d_chatbot/releases/download/v0.0.3/gradio_m3d_chatbot-0.0.3-py3-none-any.whl" }

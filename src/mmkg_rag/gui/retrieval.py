@@ -8,7 +8,7 @@ import logging
 from pathlib import Path
 import asyncio
 import gradio as gr
-from gradio_gradio_m3d_chatbot import gradio_m3d_chatbot
+from gradio_m3d_chatbot import m3d_chatbot
 from ..retrieval.classify import query_dismantle
 from ..retrieval.generate import generate_answer
 from ..utils import image_base64_url
@@ -243,7 +243,7 @@ with gr.Blocks(
     title="MGRAG",
     fill_height=True,
     fill_width=True,
-    css_paths=[Path("src/mgrag/gui/front/index.css")],
+    css_paths=[Path("src/mmkg_rag/gui/front/index.css")],
 ) as retrieval:
     gr.Markdown("## RAG with Knowledge Graph")
     with gr.Row():
@@ -294,7 +294,7 @@ with gr.Blocks(
                     )
 
         with gr.Column(scale=3):
-            chatbot = gradio_m3d_chatbot(
+            chatbot = m3d_chatbot(
                 type="messages",
                 label="Chatbot",
                 show_label=True,

@@ -16,7 +16,7 @@ tab = gr.TabbedInterface(
 )
 
 with gr.Blocks(
-    title="MMKG-RAG", css_paths=[Path("src/mgrag/gui/front/index.css")]
+    title="MMKG-RAG", css_paths=[Path("src/mmkg_rag/gui/front/index.css")]
 ) as demo:
     gr.Markdown(
         "# MMKG-RAG\n\n Enhancing Retrieval-Augmented Generation with Multi-Modal Knowledge Graph Integration. [GitHub](https://github.com/wenzhaoabc/mmkg-rag)",
