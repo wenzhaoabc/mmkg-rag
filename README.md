@@ -16,7 +16,6 @@ The details of the example can be found in [examples folder](./examples/rag/).
 
 ### Step 1: Install the requirements
 
-We customized the `Chatbot` component of Gradio and you can download it from [gradio_m3d_chatbot](https://github.com/wenzhaoabc/gradio_m3d_chatbot/releases).
 
 ```bash
 pip install -r requirements.txt
