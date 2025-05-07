@@ -8,7 +8,7 @@ import logging
 from pathlib import Path
 import asyncio
 import gradio as gr
-from gradio_m3d_chatbot import m3d_chatbot
+# from gradio_m3d_chatbot import m3d_chatbot
 from ..retrieval.classify import query_dismantle
 from ..retrieval.generate import generate_answer
 from ..utils import image_base64_url
@@ -294,7 +294,7 @@ with gr.Blocks(
                     )
 
         with gr.Column(scale=3):
-            chatbot = m3d_chatbot(
+            chatbot = gr.Chatbot(
                 type="messages",
                 label="Chatbot",
                 show_label=True,

@@ -6,4 +6,3 @@ rapidfuzz
 neo4j
 gradio
 plotly
-https://github.com/wenzhaoabc/gradio_m3d_chatbot/releases/download/v0.0.3/gradio_m3d_chatbot-0.0.3-py3-none-any.whl
