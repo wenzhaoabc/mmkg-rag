@@ -93,3 +93,49 @@ Please synthesize the above information to answer the following user questions, 
 --------
 {query}
 """
+
+
+PROMPTS[
+    "QUERY_DECOMPOSITION"
+] = """
+You are performing a Retrieval-augmented generation (RAG) task. For user query, please decompose the question into sub-queries with different aspects. Addressing creative questions requires creative thinking that draws on factual information and an understanding of underlying principles and rules. 
+
+Your task is to define multiple agents which each agent may have a different unique insights and reasoning strategies.
+For each agent, please provide the agent task and some possible suggestions for the agent to answer the sub-query.
+
+Output the result in JSON format with the following keys:
+- "agents": A list of agents, each with the following keys:
+  - "task": The task of the agent.
+  - "suggestions": A list of suggestions for the agent to answer the sub-query.
+
+
+Example:
+
+Input: "What is the impact of the new algorithm on the performance of the model?"
+Output:
+{
+  "agents": [
+    {
+      "task": "Analyze the performance metrics of the new algorithm.",
+      "suggestions": [
+        "Compare the performance with previous algorithms.",
+        "Evaluate the impact on accuracy and efficiency."
+      ]
+    },
+    {
+      "task": "Investigate the theoretical implications of the new algorithm.",
+      "suggestions": [
+        "Discuss the underlying principles of the algorithm.",
+        "Explore potential applications in different domains."
+      ]
+    }
+  ]
+}
+
+"""
+
+PROMPTS[
+    "FUSION"
+] = """
+The following are some aspects for a spefic question. Please fusion the multi answers and give a comprehensive answer. Note that the answer should be a comprehensive answer, not a simple summary of the answers. Don't repeat the same content in the answers and don't loss any information.
+"""

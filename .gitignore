@@ -57,3 +57,6 @@ venv.bak/
 *.temp
 *.log
 *.bak
+
+# Business logic
+databases/
