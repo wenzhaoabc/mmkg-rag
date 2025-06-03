@@ -39,3 +39,31 @@ def parse_classify_response(response: str) -> tuple[str, str | list[str]]:
         log.error(f"Failed to parse classify response: {e}")
     # Return empty list if parsing fails
     return "retrieval", []
+
+
+def parse_agent_defines(text: str) -> list[dict]:
+    """
+    Parse the agent defines from the text
+
+    Args:
+        text (str): The text to parse
+
+    Returns:
+        list[dict]: The agent defines
+    """
+    json_pattern = r"\{.*\}"
+    try:
+        json_str = re.search(json_pattern, text, re.DOTALL)
+        if not json_str:
+            log.error(f"Failed to parse agent defines: No JSON found, text: {text}")
+            return []
+
+        json_str = json_str.group()
+        response_dict = json.loads(json_str)
+        log.debug(f"Agent defines:\n{text}\nresponse_dict:\n{response_dict.__str__()}")
+        return response_dict["agents"]
+    except json.JSONDecodeError as e:
+        log.error(f"Failed to parse agent defines: JSONDecodeError: {e}")
+        return []
+    except Exception as e:
+        log.error(f"Failed to parse agent defines: {e}")

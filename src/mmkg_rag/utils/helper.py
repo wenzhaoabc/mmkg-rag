@@ -125,16 +125,15 @@ def pdf_2_md(
     makdown file will be saved in output_folder/<>.md
     image files will be saved in output_folder/<>.png
     """
-    from marker.convert import convert_single_pdf
-    from marker.models import load_all_models
+    from marker.converters.pdf import PdfConverter
+    from marker.models import create_model_dict
+    from marker.output import text_from_rendered
 
-    global _model_lst
-    if not _model_lst:
-        model_lst = load_all_models()
-        _model_lst = model_lst
-    else:
-        model_lst = _model_lst
-    full_text, images, out_meta = convert_single_pdf(file_path, model_lst)
+    converter = PdfConverter(
+        artifact_dict=create_model_dict(),
+    )
+    rendered = converter(file_path)
+    full_text, _, images = text_from_rendered(rendered)
 
     os.makedirs(Path(output_folder), exist_ok=True)
     file_name = os.path.basename(file_path).split(".")[0]
