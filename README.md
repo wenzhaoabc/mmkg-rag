@@ -88,9 +88,9 @@ src/mmkg_rag
 ## Citation
 
 ```bib
-@inproceedings{10.1007/978-981-95-4158-4_37,
-    author = {Zhao, Shuaitao and Luo, Shijie and Lu, Xinyuan and Rao, Weixiong},
-    title = {MMKG-RAG: Retrieval-Augmented Generation with&nbsp;Multi-modal Knowledge Graph},
+@inproceedings{mmkg-rag2026,
+    author = {Shuaitao Zhao and Shijie Luo and Xinyuan Lu and Weixiong Rao},
+    title = {MMKG-RAG: Retrieval-Augmented Generation with Multi-modal Knowledge Graph},
     year = {2026},
     url = {https://doi.org/10.1007/978-981-95-4158-4_37},
     doi = {10.1007/978-981-95-4158-4_37},
