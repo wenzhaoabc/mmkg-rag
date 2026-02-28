@@ -1,6 +1,8 @@
 # Multi-Modal Knowledge Graph RAG
 
-Multimodal RAG system for multimodal LLMs.
+Official code for article "MMKG-RAG: Retrieval-Augmented Generation with Multi-modal Knowledge Graph".
+
+MMKG-RAG is a **Multi-Modal Knowledge Graph (MMKG)-based RAG system** for multi-modal retrieval and QA. It builds **comprehensive MMKGs** to capture rich cross-modal semantics, enabling **stronger multi-modal understanding, retrieval, and cross-modal reasoning** than conventional text-centric RAG or multi-modal LLMs without an MMKG.
 
 ![architecture](./assets/mmkg-rag-architecture.png)
 
@@ -82,3 +84,15 @@ src/mmkg_rag
 ## License
 
 [MIT](./LICENSE)
+
+## Citation
+
+```bib
+@inproceedings{10.1007/978-981-95-4158-4_37,
+    author = {Zhao, Shuaitao and Luo, Shijie and Lu, Xinyuan and Rao, Weixiong},
+    title = {MMKG-RAG: Retrieval-Augmented Generation with&nbsp;Multi-modal Knowledge Graph},
+    year = {2026},
+    url = {https://doi.org/10.1007/978-981-95-4158-4_37},
+    doi = {10.1007/978-981-95-4158-4_37},
+}
+```
